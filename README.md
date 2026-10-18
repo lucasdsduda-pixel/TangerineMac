@@ -35,7 +35,7 @@ swift build
 swift run TangerineMac
 ```
 
-To build a local `.app` bundle, run `./scripts/build-app.sh` from Terminal. The script uses the installed Swift toolchain and creates an unsigned app bundle under `dist/`.
+To build a local `.app` bundle, run `sh scripts/build-app.sh` from Terminal. The script uses the installed Swift toolchain and creates an unsigned app bundle under `dist/`.
 
 ## Privacy
 
