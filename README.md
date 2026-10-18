@@ -1,46 +1,19 @@
-# TangerineMac
+# l’orangerie
 
-An independent macOS utility project for Apple Silicon, built with Swift and SwiftUI. The initial milestone focuses on native image conversion and a menu-bar entry point, with room to grow into floating tools and additional workflows.
+Aplicativo pessoal para macOS, inspirado no Open Tangerine e desenvolvido como uma variante independente para uso local.
 
-## Status
+## Privacidade
 
-Early prototype. This repository is a starting point, not yet a feature-complete replacement for Tangerine.
+O aplicativo foi estruturado para processar arquivos localmente no Mac. Não há analytics, telemetria, upload de arquivos ou verificação automática de atualizações no aplicativo.
 
-### Initial scope
-- Native SwiftUI interface
-- Drag-and-drop image input
-- Convert images to PNG, JPEG, TIFF, and PDF
-- Optional output resizing and JPEG quality control
-- Choose an output folder
-- Menu-bar extra for quick access
+## Estado atual
 
-### Planned work
-- More image editing tools and batch workflows
-- Additional file formats where macOS frameworks support them
-- Floating/panel workflows and configurable shortcuts
-- Better progress, errors, and accessibility
-- Automated tests, signing, and distribution packaging
+A versão desta branch inclui uma interface nativa SwiftUI com arrastar-e-soltar, seleção de imagens, conversão para PNG/JPEG/TIFF/PDF, qualidade JPEG, redimensionamento, escolha de pasta e menu-bar extra.
 
-## Requirements
-- macOS 13 or later
-- Xcode 15 or later (or a compatible Swift toolchain)
-- Apple Silicon recommended; Swift code is not intentionally limited to one CPU architecture
+## Desenvolvimento
 
-## Build
+Requer macOS 13+ e Swift 5.9+. Abra `Package.swift` no Xcode e selecione o produto `lOrangerie`.
 
-Open `Package.swift` in Xcode, or run:
+## Licença
 
-```sh
-swift build
-swift run TangerineMac
-```
-
-To build a local `.app` bundle, run `sh scripts/build-app.sh` from Terminal. The script uses the installed Swift toolchain and creates an unsigned app bundle under `dist/`.
-
-## Privacy
-
-The prototype processes files locally using Apple frameworks. It does not upload file contents.
-
-## License
-
-MIT. See `LICENSE`.
+Esta é uma adaptação baseada em software distribuído sob GPL-3.0. Os termos da licença e os avisos de terceiros devem ser preservados para os componentes derivados do projeto original.
