@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "TangerineMac",
+    name: "lOrangerie",
     platforms: [.macOS(.v13)],
     products: [
-        .executable(name: "TangerineMac", targets: ["TangerineMac"])
+        .executable(name: "lOrangerie", targets: ["lOrangerie"])
     ],
     targets: [
         .executableTarget(
-            name: "TangerineMac",
-            path: "Sources/TangerineMac"
+            name: "lOrangerie",
+            path: "Sources/lOrangerie"
         )
     ]
 )
